@@ -1,5 +1,7 @@
 ## Tornado AJAX Example ##
+	
+	Requires tornado
 
-	Requires tornado web 2.0+
+	sudo pip3 install tornado
 
-	pip install tornado
+	only run on python3
