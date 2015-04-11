@@ -1,7 +1,7 @@
 ## Tornado AJAX Example ##
 	
-	Requires tornado
+Requires tornado
 
-	`sudo pip3 install tornado`
+`sudo pip3 install tornado`
 
-	only run on python3
+only run on python3
