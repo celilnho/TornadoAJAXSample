@@ -24,6 +24,8 @@ import os.path
 import uuid
 import json
 import pprint
+from  tornado.escape import json_decode
+from  tornado.escape import json_encode
 
 from tornado.options import define, options
 
@@ -59,8 +61,7 @@ class TestHandler(tornado.web.RequestHandler):
 
 
     def post(self):
-        json_obj = json.loads(self.request.body)
-
+        json_obj = json_decode(self.request.body)
         print('Post data received')
 
         for key in list(json_obj.keys()):
